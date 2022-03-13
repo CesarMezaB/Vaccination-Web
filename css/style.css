@@ -1,0 +1,480 @@
+html {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+nav {
+  margin-top: 1%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+nav ul {
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+  background-color: transparent;
+}
+
+.menu li a {
+  color: rgba(12, 10, 10, 0.562);
+  display: block;
+  text-decoration: none;
+  padding: 0.4em 1em;
+}
+.menu li a:hover{
+  color: #161515;
+  font-weight: bold;
+}
+.menu li:last-child {
+  background-color: rgba(34, 18, 179, 0.774);
+  margin-right: 5.3%;
+  border-radius: 5%;
+}
+li.item .hoax {
+  color: rgb(250, 250, 250);
+}
+
+li.item .hoax:hover {
+  color: rgb(250, 250, 250);
+  
+}
+.menu li:last-child:hover {
+  background-color: rgba(53, 34, 231, 0.774);
+  margin-right: 5.3%;
+  border-radius: 5%;
+}
+.item {
+  padding-top: 10px;
+  margin-right: 5%;
+}
+li.vaccination a {
+  color: rgb(44, 44, 182);
+  font-weight: 700;
+}
+li.vaccination a:hover {
+  color: rgba(34, 34, 230, 0.815);
+  font-weight: 700;
+}
+.triangulo {
+  display: inline-flex;
+}
+
+/* @media-query */
+
+@media screen and (min-width: 480px) {
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  li.vaccination {
+    flex: 1;
+    margin-left: 10%;
+    font-size: 1.5rem;
+    color: rgba(46, 44, 160, 0.74);
+  }
+}
+.triangulo {
+  width: 0;
+  height: 0;
+  border-left: 90px solid #e8e8e8;
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  transform: rotate(90deg);
+  position: relative;
+  top: -4px;
+  left: 90px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.wrapper-child {
+  width: 50%;
+}
+
+h1 {
+  font-size: 50px;
+  width: 390px;
+  color: rgb(63, 63, 124);
+  word-wrap: break-word;
+  margin-left: 20%;
+  font-weight: bolder;
+  margin-top: 30px;
+}
+
+.nurse-child {
+  width: 648px;
+  height: 880px;
+}
+img {
+  position: relative;
+  left: 0px;
+  top: -110px;
+  z-index: -1;
+}
+.wrapper-child .nurse-child {
+  box-shadow: 0px -120px 5px #e6effac9;
+}
+.wrapper-child p {
+  margin-left: 20%;
+  margin-top: 45px;
+  width: 330px;
+  word-wrap: break-word;
+  color: #7d9099c9;
+  font-weight: bolder;
+}
+.triangulo-dos {
+  width: 0;
+  height: 0;
+  border-left: 150px solid #e8e8e8;
+  border-top: 140px solid transparent;
+  border-bottom: 140px solid transparent;
+  transform: rotate(180deg);
+  position: relative;
+  top: -380px;
+  left: 498px;
+}
+.list-items {
+  margin-top: 90px;
+  margin-left: 15%;
+}
+.list-items ul:first-child {
+  display: flex;
+  list-style: url('/assets/icons/proteger.png');
+}
+.list-items .star:last-child {
+  list-style: url('/assets/icons/estrella.png');
+  margin-left: 100px;
+}
+
+.list-items a {
+  text-decoration: none;
+  color: rgb(82, 75, 180);
+  font-size: 12px;
+  font-weight: bold;
+}
+.horario {
+  margin-top: 180px;
+  margin-left: 15%;
+  font-weight: bold;
+}
+
+.horario ul {
+  list-style: url('/assets/icons/reloj.png');
+}
+
+.horario a {
+  text-decoration: none;
+  color: rgb(70, 73, 110);
+}
+.opcion-section {
+  background-color: rgba(250, 250, 250, 0.863);
+  display: flex;
+  /* border: 1px solid; */
+  padding: 10px;
+  width: 860px;
+  height: 120px;
+  border-radius: 2%;
+}
+div.opcion-section {
+  position: absolute;
+  bottom: -30px;
+  left: 290px;
+}
+.box {
+  width: 200px;
+  height: 80px;
+  /* border: solid; */
+  text-align: center;
+  margin-left: 8px;
+  margin-top: 8px;
+}
+.box p.blue {
+  color: rgb(30, 19, 75);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.box p {
+  font-size: 16px;
+  color: rgba(88, 92, 114, 0.897);
+  font-weight: bold;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.box input[type='button'] {
+  width: 70%;
+  padding: 10px 20px;
+  margin: 20px 0;
+  color: #e8e8e8;
+  background-color: rgb(53, 44, 177);
+  box-shadow: 2px 2px 10px black;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 0;
+}
+.logos-vacunas {
+  display: flex;
+  margin-top: 100px;
+  width: 400px;
+  margin-left: 9%;
+  height: 100px;
+}
+
+.logos-vacunas img {
+  width: 280px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 40%;
+  overflow:hidden;
+}
+.get-vaccinated{
+  margin-left: 9%;
+  width: 490px;
+} 
+.get-vaccinated h2{
+  font-weight: bold;
+  font-size: 2.3rem;
+  color: rgb(32, 3, 114);
+}
+.get-vaccinated p{
+  font-weight:bold;
+  font-size: 18px;
+  color: rgb(71, 77, 75);
+}
+.care-benefits{
+  display: flex;
+  margin-top: 80px;
+  margin-left: 9%;
+  height: 300px;
+}
+.care-benefits-child{
+  width: 250px;
+  padding: 20px;
+  border: .2px solid rgba(128, 128, 128, 0.185);
+  margin: 8px;
+  background-color: #fffdfd98;
+}
+.care-benefits-child:hover {
+  background-color: rgba(227, 229, 231, 0.822);
+  transition: background-color .5s;
+  box-shadow: 0 0 40px rgb(154, 161, 158);
+}
+.care-benefits-child h2{
+  font-weight:bold ;
+  font-size: 23px;
+  color: #27405ff3;
+}
+.care-item1::before {
+  content: url('/assets/icons/control.png');
+ 
+}
+.care-item1{
+  margin-bottom: 10px;
+}
+.care-item2::before {
+  content: url('/assets/icons/proteger-1.png');
+ 
+}
+.care-item2{
+  margin-bottom: 10px;
+}
+.care-item3::before {
+  content: url('/assets/icons/grupo.png');
+ 
+}
+.care-item3{
+  margin-bottom: 10px;
+}
+.care-item4::before {
+  content: url('/assets/icons/estadisticas.png');
+ 
+}
+.care-item4{
+  margin-bottom: 10px;
+}
+
+.section-four{
+  display: flex;
+  width: 1296px;
+  margin-top: 150px;
+}
+.nurse-preparations{
+  margin-left: 5%;
+  height: 600px;
+
+}
+.nurse-preparations img{
+  width: 648px;
+  margin-top: 280px;
+  text-align: center;
+  
+}
+.nurse-preparations h2{
+color: rgb(20, 22, 119);
+font-weight: bold;
+}
+.nurse-preparations p{
+  width: 400px;
+}
+.accordion-item{
+  margin-top: 39px;
+ 
+}
+.accordion-item button{
+  color: rgb(64, 58, 122);
+  font-weight: bold;
+}
+section.emergency-contact {
+margin-left: 12%;
+margin-top: 120px;
+}
+.emergency-contact h2{
+  color: rgb(43, 45, 75);
+  font-weight: bold;
+
+}
+.emergency-contact p {
+  color: rgb(44, 46, 45);
+  width: 410px;
+  margin-top: 20px;
+}
+div.section-cards{
+  display: flex;
+  width: 1296px;
+  margin-top: 100px;
+  margin-left: 10%;
+}
+div.card-child{
+  display: flex;
+width: 600px;
+flex-wrap: wrap
+}
+
+.section-child img{
+  width: 565px;
+  top: 3px;
+  position: relative;
+}
+
+.card{
+  width:50px ;
+  margin: 10px;
+  position: relative;
+}
+.text-center{
+  padding: 5px;
+}
+.card-title{
+  color: rgb(47, 51, 85);
+  font-size: 1.3rem;
+  margin-left: -70px;
+}
+.card-video{
+  margin-left: -13px;
+}
+
+.card-msj{
+  margin-left: -17px;
+}
+.card .btn{
+  background-color: rgba(76, 75, 153, 0.151);
+  color: rgb(42, 41, 90);
+  font-weight: bolder;
+  margin: 5.5px solid rgb(153, 85, 85);
+  width: 160px;
+}
+
+.card .btn:hover{
+  background-color: rgb(37, 47, 192);
+  color:white;
+}
+.card:hover{
+ 
+  transition: background-color .5s;
+  box-shadow: 0 0 40px rgb(148, 150, 149);
+}
+
+.one-card {
+  content: url('/assets/icons/llamada-telefonica.png');
+  margin-right: 40px;
+  position: absolute;
+  top: 16px;
+  left: 22px;
+ 
+}
+.two-card{
+  content: url('/assets/icons/charla.png');
+  margin-right: 40px;
+  position: absolute;
+  top: 16px;
+  left: 22px;
+}
+.three-card{
+  content: url('/assets/icons/videollamada.png');
+  margin-right: 40px;
+  position: absolute;
+  top: 16px;
+  left: 22px;
+}
+.four-card{
+  content: url('/assets/icons/nuevo-mensaje.png');
+  margin-right: 40px;
+  position: absolute;
+  top: 16px;
+  left: 22px;
+}
+footer{
+  background-color: rgba(80, 99, 206, 0.459);
+  height: 260px;
+  margin-top: 130px;
+  display: flex;
+  padding-top: 30px;
+  padding-left: 130px;
+}
+
+.footer-vaccination{
+  width: 55%;
+}
+footer section{
+  width: 15%;
+}
+.footer-nav a{
+text-decoration: none;
+display: block;
+margin: 15px;
+font-size: 13px;
+
+}
+footer h2{
+  color: rgb(28, 29, 112);
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+.footer h3{
+  color: rgb(31, 32, 63);
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-left: 9px;
+}
+.footer-vaccination p{
+ width: 130px;
+ font-size: 13px;
+}
+.derechos{
+  margin-top: 80px;
+}
+.derechos p{
+  width: 100%;
+}
